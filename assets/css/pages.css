@@ -1,0 +1,81 @@
+/**
+* Template Name: Technocrat Coders
+* Template URL: https://technocratcoders.github.io/
+* Author: Geekblower
+*/
+
+/*--------------------------------------------------------------
+# Pages Hero Section
+--------------------------------------------------------------*/
+#pages-top {
+    width: 100%;
+    height: 50vh;
+    background: url("../img/hero-bg.jpeg") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -70px;
+}
+  
+@media (max-width: 992px) {
+    #pages-top {
+      margin-bottom: -60px;
+    }
+}
+  
+#pages-top:before {
+    content: "";
+    background: rgba(23, 12, 5, 0.829);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+#pages-top .pages-top-container {
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+  
+#pages-top h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+    
+#pages-top h2 {
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 18px;
+    text-decoration: underline;
+}
+  
+@media (min-width: 1024px) {
+    #pages-top {
+      background-attachment: fixed;
+    }
+}
+  
+@media (max-width: 768px) {
+    #pages-top h1 {
+      font-size: 25px;
+      line-height: 36px;
+    }
+    #pages-top {
+      height: 37vh;
+    }
+    #pages-top h2 {
+    font-size: 18px;
+    line-height: 24px;
+    }
+}
