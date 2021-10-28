@@ -79,3 +79,111 @@
     line-height: 24px;
     }
 }
+
+/*--------------------------------------------------------------
+# Events Details
+--------------------------------------------------------------*/
+.events-details {
+  padding-top: 30px;
+}
+
+.events-details .events-details-container {
+  position: relative;
+}
+
+.events-details .events-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.events-details .events-details-carousel .owl-nav, .events-details .events-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.events-details .events-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.events-details .events-details-carousel .owl-dot.active {
+  background-color: var(--main) !important;
+}
+
+.events-details .events-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.events-details .events-info h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.events-details .events-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.events-details .events-info ul li + li {
+  margin-top: 10px;
+}
+
+.events-details .events-description {
+  padding-top: 50px;
+}
+
+.events-details .events-description h2 {
+  width: 50%;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.events-details .events-description p {
+  padding: 40px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .events-details .events-description h2 {
+    width: 100%;
+  }
+  .events-details .events-info {
+    position: static;
+    margin-top: 30px;
+  }
+  
+  .events-details .events-description p {
+    padding: 0 0 0 0;
+  }
+}
+
+.events-details .event-btn {
+  margin-top: 28px;
+}
+
+.events-details .btn-event:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 968px) {
+  .events-details .event-btn {
+    margin-left: 23%;
+  }
+}
